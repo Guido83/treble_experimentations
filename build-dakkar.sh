@@ -50,6 +50,9 @@ ROM types:
   aex
   slim
   havoc
+  liquidremix
+  bliss
+  viper
 
 Variants are dash-joined combinations of (in order):
 * processor type
@@ -196,6 +199,27 @@ function get_rom_type() {
                 mainbranch="pie"
                 localManifestBranch="android-9.0"
                 treble_generate="havoc"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+	    liquidremix)
+                mainrepo="https://github.com/LiquidRemix/android_manifest.git"
+                mainbranch="pie"
+                localManifestBranch="android-9.0"
+                treble_generate="liquidremix"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+	    bliss)
+                mainrepo="https://github.com/BlissRoms/platform_manifest.git"
+                mainbranch="p9.0"
+                localManifestBranch="android-9.0"
+                treble_generate="bliss"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+	    viper)
+                mainrepo="https://github.com/ViperOS/viper_manifest.git"
+                mainbranch="pie"
+                localManifestBranch="android-9.0"
+                treble_generate="viper"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
         esac
