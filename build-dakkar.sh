@@ -195,7 +195,7 @@ function get_rom_type() {
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
 	    havoc)
-                mainrepo="https://github.com/Havoc-OS/android_manifest.git"
+                mainrepo="https://github.com/Guido83/android_manifest-havoc.git"
                 mainbranch="pie"
                 localManifestBranch="android-9.0"
                 treble_generate="havoc"
