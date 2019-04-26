@@ -209,7 +209,7 @@ function get_rom_type() {
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
 	    bliss)
-                mainrepo="https://github.com/BlissRoms/platform_manifest.git"
+                mainrepo="https://github.com/Guido83/platform_manifest.git"
                 mainbranch="p9.0"
                 localManifestBranch="android-9.0"
                 treble_generate="bliss"
