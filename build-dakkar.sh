@@ -53,6 +53,7 @@ ROM types:
   liquidremix
   bliss
   viper
+  bootleggers
 
 Variants are dash-joined combinations of (in order):
 * processor type
@@ -220,6 +221,13 @@ function get_rom_type() {
                 mainbranch="pie"
                 localManifestBranch="android-9.0"
                 treble_generate="viper"
+                extra_make_options="WITHOUT_CHECK_API=true"
+                ;;
+	    bootleggers)
+                mainrepo="https://github.com/Guido83/manifest-bootleggers.git"
+                mainbranch="pasta"
+                localManifestBranch="android-9.0"
+                treble_generate="bootleggers"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
         esac
